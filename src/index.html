@@ -1,14 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Rick and Morty</title>
-</head>
-<body>
-
-
-<script type="module" src="./index.js"></script>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__btn-chracters" href="./pages/characters.html">Charcters</a>
+        </li>
+        <li class="header__item">
+          <a class="header__btn-episodes" href="#">Episodes</a>
+        </li>
+      </ul>
+      <button class="header__magnifying"></button>
+      <input type="text" class="header__search" placeholder="search" />
+    </header>
+    <section class="hero">
+      <p class="hero__text">
+        If you're a fan of Rick and Morty, you don't want to miss out on our
+        app! Start exploring the endless possibilities of Rick and Morty!
+      </p>
+      <img src="#" alt="rick and mortry" />
+      <img src="#" alt="rick and mortry text" />
+      <button class="scroll-down" type="button"></button>
+    </section>
+    <section class="buttons">
+      <img src="#" alt="a lot of buttons" />
+    </section>
+    <section class="characters">
+      <ul class="characters__list-title">
+        <li class="characters__item-title">
+          <h2 class="characters__title-main">Main</h2>
+        </li>
+        <li class="characters__item-title">
+          <h2 class="characters__title-characters">Characters</h2>
+        </li>
+      </ul>
+      <img src="#" alt="characters" />
+      <ul class="characters__list">
+        <li class="characters__item">
+          <h3 class="characters__title">Rick Sanchez</h3>
+          <p class="characters__subtitle">
+            Rick Sanchez is a brilliant but deeply troubled scientist and one of
+            the main characters in the animated TV show Rick and Morty.
+          </p>
+        </li>
+        <li class="characters__item">
+          <h3 class="characters__title">Morty Smith</h3>
+          <p class="characters__subtitle">
+            Morty Smith is the other main character in the animated TV show Rick
+            and Morty, and Rick's grandson.
+          </p>
+        </li>
+        <li class="characters__item">
+          <h3 class="characters__title">Summer Smith</h3>
+          <p class="characters__subtitle">
+            Summer Smith is Morty's older sister and one of the main characters
+            in Rick and Morty. Initially portrayed as a typical teenager, she
+            develops into a more complex and independent character, who is
+            intelligent, resourceful, and fiercely loyal to her family.
+          </p>
+        </li>
+        <li class="characters__item">
+          <h3 class="characters__title">Beth Smith</h3>
+          <p class="characters__subtitle">
+            Beth is a horse surgeon, and, as Rick's daughter, she is intelligent
+            if sometimes cold. She is voiced by Sarah Chalke.
+          </p>
+        </li>
+        <li class="characters__item">
+          <h3 class="characters__title">Jerry Smith</h3>
+          <p class="characters__subtitle">
+            Jerry is the husband of Beth Smith, the father of Summer Smith and
+            Morty Smith, and the son-in-law of Rick Sanchez.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section class="slider">
+      <h3 class="slider__title">
+        Ready to <span class="slider__span-explore">explore</span> the crazy
+        world of Rick and Morty?
+      </h3>
+      <ul class="slider__list">
+        <li class="slider__item">
+            <img src="#" alt="rick and morty photo" class="slider__img" />
+        </li>
+        <li class="slider__item">
+            <img src="#" alt="rick and morty photo" class="slider__img" />
+        </li>
+        <li class="slider__item">
+            <img src="#" alt="rick and morty photo" class="slider__img" />
+        </li>
+        <li class="slider__item">
+            <img src="#" alt="rick and morty photo" class="slider__img" />
+        </li>
+        <li class="slider__item">
+            <img src="#" alt="rick and morty photo" class="slider__img" />
+        </li>
+      </ul>
+      <button class="slider__btn" type="button">Episodes</button>
+    </section>
+    <footer class="footer">
+        <img src="#" alt="rick and morty buttons" class="footer__buttons">
+        <ul class="footer__list">
+            <li class="footer__item"><p class="footer__text">Characters</p></li>
+            <li class="footer__item"><p class="footer__text">Episodes</p></li>
+        </ul>
+        <ul class="footer__btn-networks">
+            <li class="footer__item-facebook"><img src="#" alt="facebook"></li>
+            <li class="footer__item-twitter"><img src="#" alt="twitter"></li>
+            <li class="footer__item-instagram"><img src="#" alt="instagram"></li>
+        </ul>
+        <p class="footer__privacy">Privacy Policy Public Offering Agreement</p>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>

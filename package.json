@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/Vlad-Lipinskyi/Rick-Morty-Project/issues"
   },
-  "homepage": "https://github.com/Vlad-Lipinskyi/Rick-Morty-Project#readme",
+  "homepage": "https://vlad-lipinskyi.github.io/Rick-Morty-Project/",
   "dependencies": {
     "gh-pages": "^6.3.0",
     "parcel": "^2.13.3"
