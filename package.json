@@ -1,0 +1,27 @@
+{
+  "name": "rick-morty-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vlad-Lipinskyi/Rick-Morty-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Vlad-Lipinskyi/Rick-Morty-Project/issues"
+  },
+  "homepage": "https://github.com/Vlad-Lipinskyi/Rick-Morty-Project#readme",
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.13.3"
+  }
+}
