@@ -1,4 +1,4 @@
-body{
+body {
   font-family: "Montserrat";
 }
 
@@ -44,6 +44,7 @@ body{
   background: #0d171d;
   padding-top: 100px;
   padding-bottom: 86px;
+  border-radius: 0px 0px 100px 100px;
 }
 
 .hero__title {
@@ -87,7 +88,7 @@ body{
   gap: 132px;
 }
 
-.buttons {
+/* .buttons {
   height: 137px;
 }
 
@@ -96,16 +97,107 @@ body{
   position: absolute;
   top: -52;
   left: -90;
+} */
+
+.buttons__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 128px;
 }
 
-.find__list-inputs{
+.buttons__btn {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  padding: 14px 24px;
+}
+
+.buttons__item:nth-child(1) .buttons__btn {
+  color: #111;
+  background-color: #a1d737;
+  transform: translate(-127px, -10px);
+  margin-left: 70px;
+}
+
+.buttons__item:nth-child(2) .buttons__btn {
+  color: #111;
+  background-color: #daf836;
+  transform: rotate(31.266deg) translate(-225px, 95px);
+}
+
+.buttons__item:nth-child(3) .buttons__btn {
+  color: #a1d737;
+  background-color: #0d171d;
+  transform: rotate(17.072deg) translate(-200px, 85px);
+}
+
+.buttons__item:nth-child(4) .buttons__btn {
+  color: #111;
+  background-color: #daf836;
+  transform: rotate(132.001deg) translate(180px, 170px);
+}
+
+.buttons__item:nth-child(5) .buttons__btn {
+  color: #111;
+  background-color: #daf836;
+  transform: rotate(34.61deg) translate(-90px, 70px);
+}
+
+.buttons__item:nth-child(6) .buttons__btn {
+  color: #111;
+  background-color: #daf836;
+  transform: rotate(148.834deg) translate(-45px, -35px);
+}
+
+.buttons__item:nth-child(7) .buttons__btn {
+  color: #fafafa;
+  background-color: #0d171d;
+  margin-left: 90px;
+  transform: translate(-190px, -9px);
+}
+
+.buttons__item:nth-child(8) .buttons__btn {
+  color: #111;
+  background-color: #a1d737;
+  transform: translate(-180px, -9px);
+  flex-shrink: 0;
+}
+
+.buttons__item:nth-child(9) .buttons__btn {
+  color: #111;
+  background-color: #a1d737;
+  transform: rotate(180deg) translate(40px, 9px);
+}
+
+.buttons__item:nth-child(10) .buttons__btn {
+  color: #fafafa;
+  background-color: #0d171d;
+  transform: translate(-65px, -9px);
+}
+
+.buttons__item:nth-child(11) .buttons__btn {
+  color: #daf836;
+  background-color: #0d171d;
+  transform: rotate(180deg) translate(45px, 9px);
+}
+
+.buttons__item:nth-child(12) .buttons__btn {
+  color: #111;
+  background-color: #a1d737;
+  transform: rotate(180deg) translate(-95px, 9px);
+}
+
+.find__list-inputs {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
 }
 
-.find__item-inputs{
+.find__item-inputs {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -235,61 +327,108 @@ body{
   font-weight: 600;
 }
 
-.footer{
-    margin-top: 128px;
-    padding-top: 64px;
-    background: #0D171D;
-  }
-  
-  .footer__buttons {
-    width: 225px;
-    height: 107px;
-  }
-  
-  .footer__text {
-    color: #FAFAFA;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .footer__networks {
-    width: 36px;
-    height: 36px;
-  }
-  
-  .footer__btn-network {
-      border: 1px solid rgba(17, 17, 17, 0.2);
-    padding: 10px;
-    border-radius: 15px;
-  }
-  
-  .footer__privacy {
-    color: rgba(250, 250, 250, 0.40);
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
-  .footer__btn-networks{
-    display: flex;
-    gap: 32px;
-  }
-  
-  
-  .footer__box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 308px;
-    margin-bottom: 128px;
-  }
-  
-  .footer__list{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+.footer {
+  margin-top: 64px;
+  position: relative;
+  background: #0d171d;
+}
+
+.footer__button-one {
+  display: flex;
+  width: 153px;
+  height: 49px;
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 25px;
+  background: #a1d737;
+  border: none;
+
+  color: #111;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.44px;
+
+  transform: translate(-70px, 50px);
+}
+
+.footer__button-two {
+  display: flex;
+  width: 125px;
+  height: 49px;
+  transform: rotate(32.083deg) translate(30px, -30px);
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 25px;
+  background: #daf836;
+  border: none;
+
+  color: #111;
+  font-family: "Montserrat";
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0.44px;
+}
+
+.footer__text {
+  color: #fafafa;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+}
+
+.footer__networks {
+  width: 36px;
+  height: 36px;
+}
+
+.footer__btn-network {
+  border: 1px solid rgba(17, 17, 17, 0.2);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.footer__privacy {
+  color: rgba(250, 250, 250, 0.4);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer__btn-networks {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 308px;
+  margin-bottom: 128px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__rick-img {
+  position: absolute;
+  top: -33;
+  left: 50;
+
+  width: 99px;
+  height: 84px;
+}
