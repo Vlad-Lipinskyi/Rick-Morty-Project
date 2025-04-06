@@ -22,6 +22,10 @@
   "homepage": "https://vlad-lipinskyi.github.io/Rick-Morty-Project/",
   "dependencies": {
     "gh-pages": "^6.3.0",
-    "parcel": "^2.13.3"
+    "parcel": "^2.13.3",
+    "sass": "^1.86.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3"
   }
 }
