@@ -1,2 +1,12 @@
 @import "./base/reset.scss";
-@import "./styles/main-page.scss";
+@import "./base/reset.scss";
+
+@import "./partials/main-page/header";
+@import "./partials/main-page/hero";
+
+@import "./components/buttons";
+
+@import "./partials/main-page/characters";
+@import "./partials/main-page/slider";
+
+@import "./components/footer";

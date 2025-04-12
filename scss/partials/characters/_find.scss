@@ -1,0 +1,76 @@
+.find__list-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .find__item-inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .find__label {
+    color: #111;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .find__inputs {
+    padding: 16px 24px;
+    justify-content: center;
+  
+    border-radius: 100px;
+    border: 1.5px solid #111;
+    background: #daf836;
+  
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  #find__status {
+    padding: 16px 24px;
+  
+    border-radius: 100px;
+    border: 1.5px solid #111;
+  
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  #find__species {
+    padding: 16px 24px;
+  
+    border-radius: 100px;
+    border: 1.5px solid #111;
+  
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  #find__type {
+    padding: 16px 24px;
+  
+    border-radius: 100px;
+    border: 1.5px solid #111;
+  
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  #find__gender {
+    padding: 16px 24px;
+  
+    border-radius: 100px;
+    border: 1.5px solid #111;
+  
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+  }

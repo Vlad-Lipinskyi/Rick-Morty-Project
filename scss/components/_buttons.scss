@@ -1,0 +1,117 @@
+.buttons__btn {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    padding: 14px 24px;
+  
+    animation-name: buttonRotate;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  
+  .buttons__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 128px;
+  }
+  
+  @keyframes buttonRotate {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(60);
+    }
+  }
+  
+  .buttons__item:nth-child(1) .buttons__btn {
+    color: #111;
+    background-color: #a1d737;
+    transform: translate(-127px, -10px);
+    margin-left: 70px;
+    animation-duration: 0.3s;
+  }
+  
+  .buttons__item:nth-child(2) .buttons__btn {
+    color: #111;
+    background-color: #daf836;
+    transform: rotate(31.266deg) translate(-225px, 95px);
+    animation-duration: 1s;
+  }
+  
+  .buttons__item:nth-child(3) .buttons__btn {
+    color: #a1d737;
+    background-color: #0d171d;
+    transform: rotate(17.072deg) translate(-200px, 85px);
+    animation-duration: 0.5s;
+  }
+  
+  .buttons__item:nth-child(4) .buttons__btn {
+    color: #111;
+    background-color: #daf836;
+    transform: rotate(132.001deg) translate(180px, 170px);
+    animation-duration: 0.7s;
+  }
+  
+  .buttons__item:nth-child(5) .buttons__btn {
+    color: #111;
+    background-color: #daf836;
+    transform: rotate(34.61deg) translate(-90px, 70px);
+    animation-duration: 1.3s;
+  }
+  
+  .buttons__item:nth-child(6) .buttons__btn {
+    color: #111;
+    background-color: #daf836;
+    transform: rotate(148.834deg) translate(-45px, -35px);
+    animation-duration: 1.1s;
+  }
+  
+  .buttons__item:nth-child(7) .buttons__btn {
+    color: #fafafa;
+    background-color: #0d171d;
+    margin-left: 90px;
+    transform: translate(-190px, -9px);
+    animation-duration: 0.8s;
+  }
+  
+  .buttons__item:nth-child(8) .buttons__btn {
+    color: #111;
+    background-color: #a1d737;
+    transform: translate(-180px, -9px);
+    animation-duration: 0.4s;
+  }
+  
+  .buttons__item:nth-child(9) .buttons__btn {
+    color: #111;
+    background-color: #a1d737;
+    transform: rotate(180deg) translate(40px, 9px);
+    animation-duration: 0.9s;
+  }
+  
+  .buttons__item:nth-child(10) .buttons__btn {
+    color: #fafafa;
+    background-color: #0d171d;
+    transform: translate(-65px, -9px);
+    animation-duration: 1.5s;
+  }
+  
+  .buttons__item:nth-child(11) .buttons__btn {
+    color: #daf836;
+    background-color: #0d171d;
+    transform: rotate(180deg) translate(45px, 9px);
+    animation-duration: 1.8s;
+  }
+  
+  .buttons__item:nth-child(12) .buttons__btn {
+    color: #111;
+    background-color: #a1d737;
+    transform: rotate(180deg) translate(-95px, 9px);
+    animation-duration: 0.5s;
+  }
