@@ -20,15 +20,15 @@
     margin-bottom: 128px;
   }
   
-  @keyframes buttonRotate {
-    0% {
-      transform: rotate(0);
-    }
+  // @keyframes buttonRotate {
+  //   0% {
+  //     transform: rotate(0);
+  //   }
   
-    100% {
-      transform: rotate(60);
-    }
-  }
+  //   100% {
+  //     transform: rotate(60);
+  //   }
+  // }
   
   .buttons__item:nth-child(1) .buttons__btn {
     color: #111;

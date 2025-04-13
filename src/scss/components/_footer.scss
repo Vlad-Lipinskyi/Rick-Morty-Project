@@ -3,6 +3,10 @@
     position: relative;
     padding: 16px;
   }
+
+  .footer__container{
+    position: relative;
+  }
   
   .footer__button-one {
     display: flex;
@@ -94,9 +98,29 @@
   
   .footer__rick-img {
     position: absolute;
-    top: -18;
-    left: 350;
+    top: -33;
+    left: 40;
   
     width: 99px;
     height: 84px;
+  }
+
+
+  // Characters
+
+  .footer__bg{
+    background-color: #0D171D;;
+  }
+
+  .footer__privacy-character{
+    color: rgba(250, 250, 250, 0.40);
+  }
+
+  .footer__text-characters{
+    color: #FAFAFA;
+  }
+
+  .footer__button-one{
+    background-color: #A1D737;
+    color: #111;
   }

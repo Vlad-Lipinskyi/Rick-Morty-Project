@@ -16,9 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./main.scss" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./scss/main.scss" />
     <title>Rick and Morty</title>
   </head>
   <body>
@@ -27,12 +26,12 @@
         <div class="header__box">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__btn-chracters" href="./pages/characters.html"
+              <a class="header__btn-chracters" href="./characters.html"
                 >Characters</a
               >
             </li>
             <li class="header__item">
-              <a class="header__btn-episodes" href="./pages/episodes.html"
+              <a class="header__btn-episodes" href="./episodes.html"
                 >Episodes</a
               >
             </li>
@@ -44,6 +43,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero__box">
+          <div class="hero__box-move">
           <p class="hero__text">
             If you're a fan of Rick and Morty, you don't want to miss out on our
             app! Start exploring the endless possibilities of Rick and Morty!
@@ -64,11 +64,14 @@
               />
             </li>
           </ul>
-          <button class="hero__scroll-down" type="button">⬇</button>
+        </div>
+          <button class="hero__scroll-down" type="button">
+            <img src="./img/btn-hero-main.png" alt="btn hero" />
+          </button>
         </div>
       </div>
     </section>
-    <!-- <section class="buttons">
+    <section class="buttons">
       <div class="container">
         <ul class="buttons__list">
           <li class="buttons__item"><button class="buttons__btn">Animated</button></li>
@@ -86,7 +89,7 @@
         </ul>
       </div>
     </section>
-    <section class="characters">
+    <!-- <section class="characters">
       <div class="container">
         <ul class="characters__list-title">
           <li class="characters__item-title">
@@ -150,8 +153,8 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section class="slider">
+    </section> -->
+    <!-- <section class="slider">
       <div class="container">
         <h3 class="slider__title">
           Ready to <span class="slider__span-explore">explore</span> the crazy
@@ -182,9 +185,9 @@
         </ul>
         <button class="slider__btn" type="button">Episodes</button>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
+    </section> -->
+    <!-- <footer class="footer">
+      <div class="container footer__container">
         <div class="footer__box">
           <img src="./img/footer-rick-morty.webp" alt="" class="footer__rick-img">
         <ul class="footer__buttons">
