@@ -3,6 +3,19 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px){
+      max-width: 768px;
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    @media screen and (min-width: 1200px){
+      max-width: 1200px;
+      flex-wrap: nowrap;
+    }
   }
   
   .find__item-inputs {

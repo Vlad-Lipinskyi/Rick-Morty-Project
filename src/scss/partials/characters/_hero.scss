@@ -1,47 +1,108 @@
 .hero {
-    background: #0d171d;
-    padding-top: 100px;
-    padding-bottom: 86px;
-    border-radius: 0px 0px 100px 100px;
+  background: #0d171d;
+  padding-top: 100px;
+  padding-bottom: 86px;
+  border-radius: 0px 0px 100px 100px;
+}
+
+.hero__title {
+  color: #fafafa;
+  font-size: 40px;
+  font-weight: 600;
+
+  @media screen and (min-width: 768px) {
+    color: #fafafa;
+    font-size: 60px;
+    font-weight: 600;
   }
-  
-  .hero__title {
+
+  @media screen and (min-width: 1200px) {
     color: #fafafa;
     font-size: 100px;
     font-weight: 600;
   }
-  
-  .hero__subtitle {
+}
+
+.hero__subtitle {
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 317px;
+  margin-top: 14px;
+
+  @media screen and (min-width: 768px) {
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 334px;
+    margin-top: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
     color: #fafafa;
     font-size: 16px;
     font-weight: 400;
     max-width: 482px;
     margin-top: 16px;
   }
-  
-  .hero__button-back {
+}
+
+.hero__button-back {
+  display: inline-flex;
+  padding: 12px 24px;
+  align-items: flex-start;
+  gap: 10px;
+
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  border-radius: 1000px;
+  border: 1px solid rgba(250, 250, 250, 0.3);
+
+  @media screen and (min-width: 768px) {
     display: inline-flex;
     padding: 12px 24px;
     align-items: flex-start;
     gap: 10px;
-  
+
     color: #fafafa;
     font-size: 14px;
     font-weight: 600;
     margin-top: 44px;
-  
+
     border-radius: 1000px;
     border: 1px solid rgba(250, 250, 250, 0.3);
   }
-  
-  .hero__img {
+}
+
+.hero__img {
+  width: 335px;
+  height: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 386px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 486px;
     height: 525px;
   }
-  
-  .hero__box-flex {
+}
+
+.hero__box-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 132px;
+    flex-direction: row;
   }
+}
