@@ -98,18 +98,18 @@
   height: 25px;
 }
 
-.footer__btn-network {
-  border: 1px solid rgba(17, 17, 17, 0.2);
-  padding: 10px;
-  border-radius: 15px;
-  margin-top: 20px;
+// .footer__btn-network {
+//   border: 1px solid rgba(17, 17, 17, 0.2);
+//   padding: 10px;
+//   border-radius: 15px;
+//   margin-top: 20px;
 
-  @media screen and (min-width: 1200px) {
-    border: 1px solid rgba(17, 17, 17, 0.2);
-    padding: 10px;
-    border-radius: 15px;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     border: 1px solid rgba(17, 17, 17, 0.2);
+//     padding: 10px;
+//     border-radius: 15px;
+//   }
+// }
 
 .footer__privacy {
   color: rgba(17, 17, 17, 0.4);
@@ -213,3 +213,11 @@
   }
 }
 
+.footer__svg {
+  width: 26px;
+  height: 26px;
+  fill: #111;
+  padding: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.15);
+  border-radius: 15px
+}
