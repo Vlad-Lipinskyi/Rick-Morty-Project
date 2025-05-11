@@ -1,89 +1,218 @@
 .find__list-inputs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  column-gap: 20px;
 
-    @media screen and (min-width: 768px){
-      max-width: 768px;
-      flex-wrap: wrap;
-      justify-content: start;
-    }
+  @media screen and (min-width: 768px) {
+    // max-width: 720px;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 
-    @media screen and (min-width: 1200px){
-      max-width: 1200px;
-      flex-wrap: nowrap;
-    }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    flex-wrap: nowrap;
   }
-  
-  .find__item-inputs {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .find__label {
-    color: #111;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
-  .find__inputs {
+}
+
+.find__item-inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.find__label {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.find__inputs {
+  padding: 16px 24px;
+  justify-content: center;
+
+  border-radius: 100px;
+  border: 1.5px solid #111;
+  background: #daf836;
+
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  width: 233px;
+
+  @media screen and (min-width: 768px) {
     padding: 16px 24px;
     justify-content: center;
-  
+
     border-radius: 100px;
     border: 1.5px solid #111;
     background: #daf836;
-  
+
     color: #111;
     font-size: 16px;
     font-weight: 400;
+    width: 269px;
   }
-  
-  #find__status {
+
+  @media screen and (min-width: 1200px) {
     padding: 16px 24px;
-  
+    justify-content: center;
+
     border-radius: 100px;
     border: 1.5px solid #111;
-  
+    background: #daf836;
+
     color: #111;
     font-size: 16px;
     font-weight: 400;
+    width: 233px;
   }
-  
-  #find__species {
+}
+
+#find__status {
+  padding: 14px 24px;
+
+  border-radius: 100px;
+  border: 1.5px solid #111;
+
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  width: 127px;
+
+  @media screen and (min-width: 768px) {
     padding: 16px 24px;
-  
+
     border-radius: 100px;
     border: 1.5px solid #111;
-  
+
     color: #111;
     font-size: 16px;
     font-weight: 400;
+    width: 178px;
   }
-  
-  #find__type {
+
+  @media screen and (min-width: 1200px) {
     padding: 16px 24px;
-  
+
     border-radius: 100px;
     border: 1.5px solid #111;
-  
+
     color: #111;
     font-size: 16px;
     font-weight: 400;
+    width: 165px;
   }
-  
-  #find__gender {
+}
+
+#find__species {
+  padding: 14px 24px;
+
+  border-radius: 100px;
+  border: 1.5px solid #111;
+
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  width: 127px;
+
+  @media screen and (min-width: 768px) {
     padding: 16px 24px;
-  
+
     border-radius: 100px;
     border: 1.5px solid #111;
-  
+
     color: #111;
     font-size: 16px;
     font-weight: 400;
+    width: 225px;
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 16px 24px;
+
+    border-radius: 100px;
+    border: 1.5px solid #111;
+
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+    width: 184px;
+  }
+}
+
+#find__type {
+  padding: 14px 24px;
+
+  border-radius: 100px;
+  border: 1.5px solid #111;
+
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  width: 127px;
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 24px;
+
+    border-radius: 100px;
+    border: 1.5px solid #111;
+
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+    width: 175px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 16px 24px;
+
+    border-radius: 100px;
+    border: 1.5px solid #111;
+
+    color: #111;
+    font-size: 16px;
+    font-weight: 400;
+    width: 175px;
+  }
+}
+
+#find__gender {
+  padding: 14px 24px;
+
+  border-radius: 100px;
+  border: 1.5px solid #111;
+
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  width: 127px;
+
+  @media screen and (min-width: 768px) {
+    padding: 16px 24px;
+
+    border-radius: 100px;
+    border: 1.5px solid #111;
+
+    color: #111;
+    font-size: 16px;
+    width: 167px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 16px 24px;
+
+    border-radius: 100px;
+    border: 1.5px solid #111;
+
+    color: #111;
+    font-size: 16px;
+    width: 167px;
+  }
+}

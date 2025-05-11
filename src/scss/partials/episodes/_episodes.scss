@@ -1,114 +1,135 @@
 .episodes__label {
-    color: #111;
-    font-size: 14px;
-    font-weight: 400;
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.episodes__input {
+  box-sizing: border-box;
+  padding: 16px 24px;
+  border-radius: 100px;
+  border: 1.5px solid #111;
+  background: #daf836;
+  width: 335px;
+
+  @media screen and (min-width: 768px) {
+    width: 233px;
   }
-  
-  .episodes__input {
-    box-sizing: border-box;
-    padding: 16px 24px;
-    border-radius: 100px;
-    border: 1.5px solid #111;
-    background: #daf836;
-  }
-  
-  .episodes__input::placeholder {
-    color: #111;
-    font-size: 16px;
-    font-weight: 400;
-  }
-  
-  .episodes__list-inputs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding-top: 79px;
-  }
-  
-  .episodes__item-inputs{
-    display: flex;
+}
+
+.episodes__input::placeholder {
+  color: #111;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.episodes__list-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 79px;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media screen and (min-width:768px){
     flex-direction: column;
-    gap: 8px;
   }
-  
-  .episodes__select {
-    display: flex;
-    padding: 16px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 44px;
-  
-    border-radius: 100px;
-    border: 1.5px solid #111;
-  
-    color: #111;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
+
+  @media screen and (min-width:768px){
+    flex-direction: row;
+}
+}
+
+.episodes__item-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.episodes__select {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+
+  border-radius: 100px;
+  border: 1.5px solid #111;
+
+  color: #111;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  width: 335px;
+
+  @media screen and (min-width: 768px) {
+    width: 190px;
   }
-  
-  .episodes__item-type {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 284px;
-    width: 100%;
-    justify-content: space-between;
-  
-    height: 200px;
-    border: 1px solid greenyellow;
-    border-radius: 9px;
-    background-image: url(./img/card-background.png) rgb(27, 27, 27);
-  }
-  
-  .episodes__title-type {
-    color: #a1d737;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  
-  .episodes__list-type {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 64px;
-  }
-  
-  .episodes__button-more {
-    display: block;
-    padding: 12px 24px;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 10px;
-  
-    border-radius: 1000px;
-    background: #a1d737;
-  
-    color: #0d171d;
-  
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    margin-top: 76px;
-    margin-bottom: 140px;
-  }
-  
-  .episodes__title-gray {
-    color: rgba(250, 250, 250, 0.5);
-    font-size: 12px;
-    font-weight: 400;
-  }
-  
-  .episodes__subtitle-season,
-  .episodes__subtitle-date {
-    color: #fafafa;
-    font-size: 14px;
-    font-weight: 400;
-  }
-  
-  .episdoes__box-flex {
-    display: flex;
-    gap: 17px;
-  }
+}
+
+.episodes__item-type {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 284px;
+  width: 100%;
+  justify-content: space-between;
+
+  height: 200px;
+  border: 1px solid greenyellow;
+  border-radius: 9px;
+  background-color: black;
+}
+
+.episodes__title-type {
+  color: #a1d737;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.episodes__list-type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 64px;
+  justify-content: center;
+}
+
+.episodes__button-more {
+  display: block;
+  padding: 12px 24px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+
+  border-radius: 1000px;
+  background: #a1d737;
+
+  color: #0d171d;
+
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  margin-top: 76px;
+  margin-bottom: 140px;
+}
+
+.episodes__title-gray {
+  color: rgba(250, 250, 250, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.episodes__subtitle-season,
+.episodes__subtitle-date {
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.episdoes__box-flex {
+  display: flex;
+  gap: 17px;
+}
