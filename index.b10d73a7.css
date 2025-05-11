@@ -50,11 +50,14 @@ img {
   display: block;
 }
 
+input {
+  box-sizing: border-box;
+}
+
 .header {
   background: #0d171d;
   width: 100%;
   padding-top: 24px;
-  position: relative;
 }
 
 .header__list {
@@ -111,7 +114,7 @@ img {
   background: #0d171d;
   border: 1px solid #fafafa4d;
   border-radius: 1000px;
-  width: 100%;
+  width: 124px;
   padding: 10px 18px;
   font-family: Montserrat;
   font-size: 12px;
@@ -124,7 +127,7 @@ img {
     background: #0d171d;
     border: 1px solid #fafafa4d;
     border-radius: 1000px;
-    max-width: 76px;
+    width: 124px;
     padding: 12px 0 12px 50px;
     font-family: Montserrat;
     font-size: 14px;
@@ -144,13 +147,17 @@ img {
   display: flex;
 }
 
+.header__father {
+  position: relative;
+}
+
 .header__svg-search {
   fill: #fafafa;
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 36px;
-  left: 1430px;
+  top: 12px;
+  left: 22px;
 }
 
 .hero {

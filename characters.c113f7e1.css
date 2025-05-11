@@ -50,6 +50,10 @@ img {
   display: block;
 }
 
+input {
+  box-sizing: border-box;
+}
+
 .header {
   background: #0d171d;
   position: relative;
