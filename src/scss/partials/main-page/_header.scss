@@ -2,7 +2,6 @@
     background: #0d171d;
     width: 100%;
     padding-top: 24px;
-    position: relative;
   }
   
   .header__list {
@@ -65,6 +64,7 @@
     font-size: 12px;
     font-weight: 600;
     width: 100%;
+    width: 124px;
   
     @media screen and (min-width: 1440px) {
       padding: 12px 0px 12px 50px;
@@ -76,7 +76,7 @@
       font-family: "Montserrat";
       font-size: 14px;
       font-weight: 600;
-      max-width: 76px;
+      width: 124px;
     }
   }
 
@@ -92,11 +92,15 @@
     justify-content: space-between;
   }
 
+  .header__father{
+    position: relative;
+  }
+
   .header__svg-search{
     width: 18px;
     height: 18px;
     fill: #FAFAFA;
     position: absolute;
-    top: 36;
-    left: 1430;
+    top: 12;
+    left: 22;
   }
