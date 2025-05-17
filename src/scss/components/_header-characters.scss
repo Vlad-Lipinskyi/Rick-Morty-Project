@@ -10,8 +10,6 @@
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid red;
-
-  position: relative;
 }
 
 .header__box {
@@ -65,5 +63,9 @@
   fill: #fafafa;
   position: absolute;
   top: 31;
-  left: 1117;
+  left: 11;
+}
+
+.header__father {
+  position: relative;
 }

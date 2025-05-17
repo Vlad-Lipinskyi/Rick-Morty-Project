@@ -129,15 +129,18 @@
 .footer__btn-networks {
   display: flex;
   gap: 12px;
+  margin-top: 20px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 24px;
+    margin-top: 0;
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 32px;
+    margin-top: 0;
   }
 }
 
@@ -170,13 +173,13 @@
 
 .footer__rick-img {
   position: absolute;
-  top: -24;
-  left: -30;
+  top: -8;
+  left: -50;
 
   width: 99px;
   height: 84px;
 
-  @media screen and (min-wdith: 768px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     top: -33;
     left: -20;
@@ -185,7 +188,7 @@
     height: 84px;
   }
 
-  @media screen and (min-wdith: 1200px) {
+  @media screen and (min-width: 1200px) {
     position: absolute;
     top: -33;
     left: -20;

@@ -20,15 +20,15 @@
   margin-bottom: 128px;
 }
 
-// @keyframes buttonRotate {
-//   0% {
-//     transform: rotate(0);
-//   }
+@keyframes buttonRotate {
+  0% {
+    transform: rotate(0);
+  }
 
-//   100% {
-//     transform: rotate(60);
-//   }
-// }
+  100% {
+    transform: rotate(60);
+  }
+}
 
 .buttons__item:nth-child(1) .buttons__btn {
   display: none;
@@ -139,8 +139,24 @@
   display: flex;
   color: #fafafa;
   background-color: #0d171d;
+  transform: translate(-60px, -9px);
+  animation-duration: 1.5s;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  color: #fafafa;
+  background-color: #0d171d;
+  transform: translate(350px, -9px);
+  animation-duration: 1.5s;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  color: #fafafa;
+  background-color: #0d171d;
   transform: translate(-65px, -9px);
   animation-duration: 1.5s;
+  }
 }
 
 .buttons__item:nth-child(11) .buttons__btn {

@@ -460,19 +460,32 @@
         <button class="characters__btn-load">Load more</button>
       </div>
     </section>
-    <footer class="footer footer__bg">
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer__container">
         <div class="footer__box">
-          <img src="./img/footer-rick-morty.webp" alt="" class="footer__rick-img">
-        <ul class="footer__buttons">
-          <li class="footer__buttons-item"><button class="footer__button footer__button-one">Rick and</button></li>
-          <li class="footer__buttons-item"><button class="footer__button footer__button-two">Morty</button></li>
-        </ul>
-          <ul class="footer__list">
-            <li class="footer__item"><p class="footer__text footer__text-characters">Characters</p></li>
-            <li class="footer__item"><p class="footer__text footer__text-characters">Episodes</p></li>
+          <img
+            src="./img/footer-rick-morty.webp"
+            alt=""
+            class="footer__rick-img"
+          />
+          <ul class="footer__buttons">
+            <li class="footer__buttons-item">
+              <button class="footer__button footer__button-one">
+                Rick and
+              </button>
+            </li>
+            <li class="footer__buttons-item">
+              <button class="footer__button footer__button-two">Morty</button>
+            </li>
           </ul>
-          <ul class="footer__btn-networks">
+          <div class="footer__box-move">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <p class="footer__text">Characters</p>
+              </li>
+              <li class="footer__item"><p class="footer__text">Episodes</p></li>
+            </ul>
+            <ul class="footer__btn-networks">
               <li class="footer__item-facebook footer__btn-network">
                 <svg class="footer__svg">
                   <use href="./img/symbol-defs.svg#icon-facebook"></use>
@@ -489,10 +502,11 @@
                 </svg>
               </li>
             </ul>
+          </div>
         </div>
-        <p class="footer__privacy footer__privacy-character">Privacy Policy Public Offering Agreement</p>
+        <p class="footer__privacy">Privacy Policy Public Offering Agreement</p>
       </div>
-    </footer> 
+    </footer>
     <!-- <div class="modal__index">
       <div class="modal__box-flex">
         <img
