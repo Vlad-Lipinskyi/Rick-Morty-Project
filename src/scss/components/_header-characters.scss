@@ -43,11 +43,11 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    padding: 12px 0 12px 50px;
     justify-content: center;
     align-items: center;
     gap: 8px;
     max-width: 124px;
+    text-align: end;
   }
 }
 

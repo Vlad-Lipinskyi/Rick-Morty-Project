@@ -1,10 +1,30 @@
 .modal__index {
   border-radius: 18px;
   background: #0d171d;
-  width: 710px;
+  width: 335px;
   height: auto;
-  padding: 32px;
+  padding: 40px 20px 20px 20px;
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+    background: #0d171d;
+    width: 710px;
+    height: auto;
+    padding: 32px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    gap: 0;
+  }
 }
 
 .modal__img-index {
@@ -22,9 +42,16 @@
 
 .modal__descr-white {
   color: #fafafa;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+
+  @media screen and (min-width: 768px) {
+    color: #fafafa;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
+  }
 }
 
 .modal__ul-descr {
@@ -40,9 +67,16 @@
 
 .modal__index-title {
   color: #fafafa;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    color: #fafafa;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
 }
 
 .modal__episodes-title {
@@ -64,37 +98,58 @@
   font-weight: 400;
 }
 
-.modal__list-flex{
-    display: flex;
-    justify-content: space-between;
+.modal__list-flex {
+  display: flex;
+  justify-content: space-between;
 }
 
-.modal__item-flex{
-    display: flex;
-    flex-direction: column;
+.modal__item-flex {
+  display: flex;
+  flex-direction: column;
 }
 
-.modal__list-margin{
-    margin-right: 14px;
+.modal__list-margin {
+  margin-right: 14px;
 }
 
-.modal__item-episodes{
+.modal__item-episodes {
+  border: 2px solid greenyellow;
+  border-radius: 20px;
+  padding: 16px;
+  width: 295px;
+
+  @media screen and (min-width: 768px) {
     border: 2px solid greenyellow;
     border-radius: 20px;
     padding: 16px;
     width: 352px;
+  }
 }
 
-.modal__list-episodes{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.modal__list-episodes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.modal__box-flex2{
-    margin-left: 16px;
+.modal__box-flex2 {
+  margin-left: 16px;
 }
 
-.modal__item-space{
-    display: flex;
+.modal__item-space {
+  display: flex;
+}
+
+.modal__close {
+  width: 22px;
+  height: 22px;
+  fill: greenyellow;
+  position: absolute;
+  left: 335;
+  top: 10;
+
+  @media screen and (min-width:768px){
+    left: 735;
+    top: 10;
+  }
 }
