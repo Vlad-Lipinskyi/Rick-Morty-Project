@@ -24,6 +24,9 @@
     margin-right: auto;
     flex-direction: row;
     gap: 0;
+    position: fixed;
+    left: 25%;
+    top: 25%;
   }
 }
 
@@ -152,4 +155,12 @@
     left: 735;
     top: 10;
   }
+}
+
+// .characters-is-hidden{
+//   display: none;
+// }
+
+.modal__close-btn{
+  background-color: transparent;
 }

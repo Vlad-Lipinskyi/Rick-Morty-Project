@@ -84,7 +84,7 @@
   @media screen and (min-width: 768px) {
     margin-top: auto;
     margin-bottom: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
     text-align: center;
     padding-top: auto;
   }
@@ -108,17 +108,12 @@
 
 .hero__scroll-down {
     display: flex;
-    width: 44px;
-    height: 44px;
+    width: 80px;
+    height: 80px;
     background: transparent;
     border: none;
-    margin-top: auto;
     margin-left: auto;
     margin-top: 64px;
-
-    // position: absolute;
-    // left: 800;
-    // top: 580;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -128,10 +123,6 @@
     border: none;
     margin-top: auto;
     margin-left: auto;
-
-    position: absolute;
-    left: 800;
-    top: 580;
   }
 
   @media screen and (min-width: 1200px) {
@@ -142,7 +133,6 @@
     border: none;
     margin-top: auto;
     margin-left: auto;
-
     position: static;
   }
 }
