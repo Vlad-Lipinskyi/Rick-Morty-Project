@@ -28,10 +28,12 @@
             alt="logo"
             class="header__logo"
           />
-          <input type="text" class="header__search" placeholder="search" />
-          <svg class="header__svg-search">
-            <use href="./img/symbol-defs.svg#icon-search"></use>
-          </svg>
+          <div class="header__father">
+            <input type="text" class="header__search" placeholder="Search" />
+            <svg class="header__svg-search">
+              <use href="./img/symbol-defs.svg#icon-search"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </header>
@@ -159,20 +161,22 @@
       <div class="container">
         <ul class="characters__list">
           <li class="characters__item">
-            <img
-              src="./img/characters-test.webp"
-              alt="characters"
-              class="characters__img"
-            />
-            <h4 class="characters__name">Beebo</h4>
-            <div class="characters__box">
-              <p class="characters__subtitle-gray">Origin:</p>
-              <p class="characters__subtitle">Earth - c317</p>
-            </div>
-            <div class="characters__box">
-              <p class="characters__subtitle-gray">Location:</p>
-              <p class="characters__subtitle">Svazilend</p>
-            </div>
+            <a href="#" class="characters__link">
+              <img
+                src="./img/characters-test.webp"
+                alt="characters"
+                class="characters__img"
+              />
+              <h4 class="characters__name">Beebo</h4>
+              <div class="characters__box">
+                <p class="characters__subtitle-gray">Origin:</p>
+                <p class="characters__subtitle">Earth - c317</p>
+              </div>
+              <div class="characters__box">
+                <p class="characters__subtitle-gray">Location:</p>
+                <p class="characters__subtitle">Svazilend</p>
+              </div>
+            </a>
           </li>
           <li class="characters__item">
             <img
@@ -529,125 +533,128 @@
         <p class="footer__privacy">Privacy Policy Public Offering Agreement</p>
       </div>
     </footer>
-    <div class="modal__index characters-is-hidden">
-      <div class="modal__box-flex">
-        <img
-          src="./img/modal-index-img.webp"
-          alt="rick"
-          class="modal__img-index"
-        />
-        <ul class="modal__ul-descr">
-          <li class="modal__item-descr">
-            <h5 class="modal__descr-gray">Status</h5>
-            <p class="modal__descr-white">Alive</p>
-          </li>
-          <li class="modal__item-descr">
-            <h5 class="modal__descr-gray">Species</h5>
-            <p class="modal__descr-white">Human</p>
-          </li>
-          <li class="modal__item-descr">
-            <h5 class="modal__descr-gray">Gender</h5>
-            <p class="modal__descr-white">Male</p>
-          </li>
-          <li class="modal__item-descr">
-            <h5 class="modal__descr-gray">Origin</h5>
-            <p class="modal__descr-white">Earth</p>
-          </li>
-          <li class="modal__item-descr">
-            <h5 class="modal__descr-gray">Location</h5>
-            <p class="modal__descr-white">Jerryboree</p>
-          </li>
-          <li class="modal__item-descr">
-            <h5 class="modal__descr-gray">Type</h5>
-            <p class="modal__descr-white">Human</p>
-          </li>
-        </ul>
+    <div class="characters-is-hidden backdrop">
+      <div class="modal__index">
+        <div class="modal__box-flex">
+          <img
+            src="./img/modal-index-img.webp"
+            alt="rick"
+            class="modal__img-index"
+          />
+          <ul class="modal__ul-descr">
+            <li class="modal__item-descr">
+              <h5 class="modal__descr-gray">Status</h5>
+              <p class="modal__descr-white">Alive</p>
+            </li>
+            <li class="modal__item-descr">
+              <h5 class="modal__descr-gray">Species</h5>
+              <p class="modal__descr-white">Human</p>
+            </li>
+            <li class="modal__item-descr">
+              <h5 class="modal__descr-gray">Gender</h5>
+              <p class="modal__descr-white">Male</p>
+            </li>
+            <li class="modal__item-descr">
+              <h5 class="modal__descr-gray">Origin</h5>
+              <p class="modal__descr-white">Earth</p>
+            </li>
+            <li class="modal__item-descr">
+              <h5 class="modal__descr-gray">Location</h5>
+              <p class="modal__descr-white">Jerryboree</p>
+            </li>
+            <li class="modal__item-descr">
+              <h5 class="modal__descr-gray">Type</h5>
+              <p class="modal__descr-white">Human</p>
+            </li>
+          </ul>
+        </div>
+        <div class="modal__box-flex2">
+          <h3 class="modal__index-title">Episodes</h3>
+          <ul class="modal__list-episodes">
+            <li class="modal__item-episodes">
+              <div class="modal__list-flex">
+                <h4 class="modal__episodes-title">Pilot</h4>
+                <div class="modal__item-space">
+                  <div class="modal__item-flex modal__list-margin">
+                    <h5 class="modal__episodes-gray">Season</h5>
+                    <p class="modal__episodes-white">1</p>
+                  </div>
+                  <div class="modal__item-flex">
+                    <h5 class="modal__episodes-gray">Air Date</h5>
+                    <p class="modal__episodes-white">December 2, 2013</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__item-episodes">
+              <div class="modal__list-flex">
+                <h4 class="modal__episodes-title">Lawnmower...</h4>
+                <div class="modal__item-space">
+                  <div class="modal__item-flex modal__list-margin">
+                    <h5 class="modal__episodes-gray">Season</h5>
+                    <p class="modal__episodes-white">1</p>
+                  </div>
+                  <div class="modal__item-flex">
+                    <h5 class="modal__episodes-gray">Air Date</h5>
+                    <p class="modal__episodes-white">December 9, 2013</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__item-episodes">
+              <div class="modal__list-flex">
+                <h4 class="modal__episodes-title">Anatomy Park</h4>
+                <div class="modal__item-space">
+                  <div class="modal__item-flex modal__list-margin">
+                    <h5 class="modal__episodes-gray">Season</h5>
+                    <p class="modal__episodes-white">1</p>
+                  </div>
+                  <div class="modal__item-flex">
+                    <h5 class="modal__episodes-gray">Air Date</h5>
+                    <p class="modal__episodes-white">December 16, 2013</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__item-episodes">
+              <div class="modal__list-flex">
+                <h4 class="modal__episodes-title">M. Night...</h4>
+                <div class="modal__item-space">
+                  <div class="modal__item-flex modal__list-margin">
+                    <h5 class="modal__episodes-gray">Season</h5>
+                    <p class="modal__episodes-white">1</p>
+                  </div>
+                  <div class="modal__item-flex">
+                    <h5 class="modal__episodes-gray">Air Date</h5>
+                    <p class="modal__episodes-white">January 13, 2014</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="modal__item-episodes">
+              <div class="modal__list-flex">
+                <h4 class="modal__episodes-title">Meeseeks an...</h4>
+                <div class="modal__item-space">
+                  <div class="modal__item-flex modal__list-margin">
+                    <h5 class="modal__episodes-gray">Season</h5>
+                    <p class="modal__episodes-white">1</p>
+                  </div>
+                  <div class="modal__item-flex">
+                    <h5 class="modal__episodes-gray">Air Date</h5>
+                    <p class="modal__episodes-white">January 20, 2014</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="modal__close-btn">
+          <svg class="modal__close">
+            <use href="./img/symbol-defs.svg#icon-cancel"></use>
+          </svg>
+        </button>
       </div>
-      <div class="modal__box-flex2">
-        <h3 class="modal__index-title">Episodes</h3>
-        <ul class="modal__list-episodes">
-          <li class="modal__item-episodes">
-            <div class="modal__list-flex">
-              <h4 class="modal__episodes-title">Pilot</h4>
-              <div class="modal__item-space">
-                <div class="modal__item-flex modal__list-margin">
-                  <h5 class="modal__episodes-gray">Season</h5>
-                  <p class="modal__episodes-white">1</p>
-                </div>
-                <div class="modal__item-flex">
-                  <h5 class="modal__episodes-gray">Air Date</h5>
-                  <p class="modal__episodes-white">December 2, 2013</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="modal__item-episodes">
-            <div class="modal__list-flex">
-              <h4 class="modal__episodes-title">Lawnmower...</h4>
-              <div class="modal__item-space">
-                <div class="modal__item-flex modal__list-margin">
-                  <h5 class="modal__episodes-gray">Season</h5>
-                  <p class="modal__episodes-white">1</p>
-                </div>
-                <div class="modal__item-flex">
-                  <h5 class="modal__episodes-gray">Air Date</h5>
-                  <p class="modal__episodes-white">December 9, 2013</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="modal__item-episodes">
-            <div class="modal__list-flex">
-              <h4 class="modal__episodes-title">Anatomy Park</h4>
-              <div class="modal__item-space">
-                <div class="modal__item-flex modal__list-margin">
-                  <h5 class="modal__episodes-gray">Season</h5>
-                  <p class="modal__episodes-white">1</p>
-                </div>
-                <div class="modal__item-flex">
-                  <h5 class="modal__episodes-gray">Air Date</h5>
-                  <p class="modal__episodes-white">December 16, 2013</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="modal__item-episodes">
-            <div class="modal__list-flex">
-              <h4 class="modal__episodes-title">M. Night...</h4>
-              <div class="modal__item-space">
-                <div class="modal__item-flex modal__list-margin">
-                  <h5 class="modal__episodes-gray">Season</h5>
-                  <p class="modal__episodes-white">1</p>
-                </div>
-                <div class="modal__item-flex">
-                  <h5 class="modal__episodes-gray">Air Date</h5>
-                  <p class="modal__episodes-white">January 13, 2014</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="modal__item-episodes">
-            <div class="modal__list-flex">
-              <h4 class="modal__episodes-title">Meeseeks an...</h4>
-              <div class="modal__item-space">
-                <div class="modal__item-flex modal__list-margin">
-                  <h5 class="modal__episodes-gray">Season</h5>
-                  <p class="modal__episodes-white">1</p>
-                </div>
-                <div class="modal__item-flex">
-                  <h5 class="modal__episodes-gray">Air Date</h5>
-                  <p class="modal__episodes-white">January 20, 2014</p>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <button class="modal__close-btn">
-        <svg class="modal__close">
-          <use href="./img/symbol-defs.svg#icon-cancel"></use>
-        </svg>
-      </button>
     </div>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
