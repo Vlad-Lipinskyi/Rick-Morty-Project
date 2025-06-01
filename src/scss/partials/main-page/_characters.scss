@@ -95,10 +95,11 @@
   }
 }
 
-.characters__img {
+.characters__image {
   width: 315px;
   height: 308;
   margin-top: 47px;
+  flex-shrink: 0;
 
   @media screen and (min-width: 768px) {
     width: 704px;

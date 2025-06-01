@@ -5,7 +5,7 @@ getCharactersAPI().then((data) => {
 // console.log(data.results);
 // const charactersList = document.querySelector(".characters__list").innerHTML = makeMarkUp(data.results)
 // makeMarkUp(data.results)
-const charactersList = document.querySelector(".characters__list");
+const charactersList = document.querySelector(".js-characters");
 charactersList.innerHTML = makeMarkUp(data.results)
 // const test = makeMarkUp(data.results)
 console.log(data)

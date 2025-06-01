@@ -2,7 +2,6 @@ export const makeMarkUp = (data) => {
   const elements = data.map((element) => {
     const makeCharacters = `
     <li class="characters__item">
-            <a href="#" class="characters__link">
               <img
                 src="${element.image}"
                 alt="characters"
@@ -17,7 +16,6 @@ export const makeMarkUp = (data) => {
                 <p class="characters__subtitle-gray">Location: </p>
                 <p class="characters__subtitle">${element.location.name === "unknown" ? "" : element.location.name}</p>
               </div>
-            </a>
           </li>
     `;
     return makeCharacters
@@ -25,3 +23,5 @@ export const makeMarkUp = (data) => {
 
   return elements
 };
+
+// <a href="#" class="characters__link"></a>

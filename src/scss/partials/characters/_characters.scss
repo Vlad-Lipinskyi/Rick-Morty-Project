@@ -73,10 +73,15 @@
 
 .characters__item {
   margin-bottom: 0px;
+  display: none;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 64px;
   }
+}
+
+.characters__item:nth-child(-n+5){
+  display: block;
 }
 
 .characters__btn-load {
