@@ -1,6 +1,6 @@
-export const makeMarkUp = (data) => {
+export const makeMarkUpEpisodes = (data) => {
   const elements = data.map((element) => {
-    const makeCharacters = `
+    const makeEpisodes = `
 <li class="episodes__item-type">
             <h4 class="episodes__title-type">${element.name}</h4>
             <div class="episdoes__box-flex">
@@ -15,7 +15,7 @@ export const makeMarkUp = (data) => {
             </div>
           </li>
     `;
-    return makeCharacters
+    return makeEpisodes
   }).join("");
 
   return elements

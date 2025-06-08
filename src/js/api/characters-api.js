@@ -1,1 +1,1 @@
-export const getCharactersAPI = () => fetch("https://rickandmortyapi.com/api/character").then((respons) => respons.json());
+export const getCharactersAPI = async () => await fetch("https://rickandmortyapi.com/api/character").then((respons) => respons.json());

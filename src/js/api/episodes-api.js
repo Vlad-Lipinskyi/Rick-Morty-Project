@@ -1,0 +1,1 @@
+export const getEpisodesAPI = async () => await fetch("https://rickandmortyapi.com/api/episode").then((respons) => respons.json());
