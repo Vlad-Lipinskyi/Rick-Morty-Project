@@ -1,17 +1,24 @@
 let perPage = 5;
+let currentIndex = 0;
 
-const listPagination = document.querySelector(".js-characters")
-const buttonShowMore = document.querySelector(".characters__btn-load")
-const liElement = document.querySelector(".characters__item")
+const listPagination = document.querySelector(".js-characters");
+const buttonShowMore = document.querySelector(".characters__btn-load");
 
-buttonShowMore.addEventListener("click", (e) => {
-    perPage += 3
-})
+function showItems(limit) {
+  const items = Array.from(listPagination.children);
 
-function makingPagination(characters) {
-    const test = listPagination.children
-    return test
+  items.forEach((item, index) => {
+    item.style.display = index < limit ? "block" : "none";
+  });
 }
-makingPagination()
 
-console.log(makingPagination())
+buttonShowMore.addEventListener("click", () => {
+  perPage += 3;
+  showItems(perPage);
+});
+
+function makingPagination() {
+  showItems(perPage);
+}
+
+makingPagination();

@@ -24,4 +24,3 @@ export const makeMarkUp = (data) => {
   return elements
 };
 
-// <a href="#" class="characters__link"></a>
