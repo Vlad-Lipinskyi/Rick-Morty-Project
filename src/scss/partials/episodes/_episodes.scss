@@ -32,13 +32,13 @@
   flex-wrap: wrap;
   flex-direction: column;
 
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     flex-direction: column;
   }
 
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     flex-direction: row;
-}
+  }
 }
 
 .episodes__item-inputs {
@@ -72,7 +72,6 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 20px;
   max-width: 284px;
   width: 100%;
   justify-content: space-between;
@@ -80,13 +79,16 @@
   height: 200px;
   border: 1px solid greenyellow;
   border-radius: 9px;
-  background-color: black;
+  overflow: hidden;
+
+  position: relative;
 }
 
 .episodes__title-type {
   color: #a1d737;
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 106px;
 }
 
 .episodes__list-type {
@@ -132,4 +134,14 @@
 .episdoes__box-flex {
   display: flex;
   gap: 17px;
+}
+
+.episodes-overlay {
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(rgba(13, 23, 29, 0.6), rgba(13, 23, 29, 0.6));
 }

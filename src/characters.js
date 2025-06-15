@@ -1,2 +1,5 @@
+import "./js/index/make-markup"
 import "./js/modal/characters-modal"
 import "./js/app"
+import "./js/modal/characters-modal"
+import "./js/pagination/pagination-marking"
