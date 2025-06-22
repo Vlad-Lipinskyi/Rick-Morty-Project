@@ -20,18 +20,22 @@ const filterEpisodesBySeason = (seasonValue) => {
   }[seasonValue];
 
   return allEpisodes.filter((episode) => {
-    const seasonFromEpisodeCode = episode.episode.slice(2, 3); 
+    const seasonFromEpisodeCode = episode.episode.slice(2, 3);
     return seasonFromEpisodeCode === seasonNumber;
   });
 };
 
-seasonSelect.addEventListener("change", (e) => {
-  const selectedSeason = e.target.value;
-  const filteredEpisodes = filterEpisodesBySeason(selectedSeason);
-  episodesList.innerHTML = makeMarkUpEpisodes(filteredEpisodes);
-});
+if (seasonSelect !== null) {
+  seasonSelect.addEventListener("change", (e) => {
+    const selectedSeason = e.target.value;
+    const filteredEpisodes = filterEpisodesBySeason(selectedSeason);
+    episodesList.innerHTML = makeMarkUpEpisodes(filteredEpisodes);
+  });
+}
 
 getEpisodesAPI().then((data) => {
   allEpisodes = data.results;
-  episodesList.innerHTML = makeMarkUpEpisodes(allEpisodes);
+  if (episodesList !== null) {
+    episodesList.innerHTML = makeMarkUpEpisodes(allEpisodes);
+  }
 });

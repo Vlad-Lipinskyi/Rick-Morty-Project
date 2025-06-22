@@ -11,12 +11,12 @@ function showItems(limit) {
     item.style.display = index < limit ? "block" : "none";
   });
 }
-
-buttonShowMore.addEventListener("click", () => {
-  perPage += 4;
-  showItems(perPage);
-});
-
+if (buttonShowMore !== null) {
+  buttonShowMore.addEventListener("click", () => {
+    perPage += 4;
+    showItems(perPage);
+  });
+}
 function makingPagination() {
   showItems(perPage);
 }

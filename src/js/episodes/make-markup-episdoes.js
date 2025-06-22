@@ -4,12 +4,8 @@ import imgDataThree from "../../img/season-three.jpg";
 import imgDataFour from "../../img/season-four.jpg";
 import imgDataFive from "../../img/season-five.jpg";
 import imgDataSix from "../../img/season-six.jpg";
-console.log(imgDataOne);
 
-export const makeMarkUpEpisodes = (data) => {
-  console.log(data);
-  const elements = data
-    .map((element) => {
+export const makeMarkUpEpisodes = (data) => data.map((element) => {
       let imgUrl = null;
       let season = element.episode.slice(2, 3);
       console.log(season);
@@ -47,6 +43,3 @@ export const makeMarkUpEpisodes = (data) => {
       return makeEpisodes;
     })
     .join("");
-
-  return elements;
-};
