@@ -8,7 +8,6 @@ img {
 }
 
 .container {
-  outline: 1px solid red;
   max-width: 335px;
   margin-left: auto;
   margin-right: auto;
@@ -47,6 +46,8 @@ ul {
 }
 
 img {
+  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -111,6 +112,7 @@ input {
 
 .header__search {
   color: #fafafa;
+  text-align: end;
   background: #0d171d;
   border: 1px solid #fafafa4d;
   border-radius: 1000px;
@@ -121,9 +123,10 @@ input {
   font-weight: 600;
 }
 
-@media screen and (width >= 1440px) {
+@media screen and (width >= 1200px) {
   .header__search {
     color: #fafafa;
+    text-align: center;
     background: #0d171d;
     border: 1px solid #fafafa4d;
     border-radius: 1000px;
@@ -156,8 +159,15 @@ input {
   width: 18px;
   height: 18px;
   position: absolute;
-  top: 12px;
-  left: 22px;
+  top: 9px;
+  left: 20px;
+}
+
+@media screen and (width >= 1200px) {
+  .header__svg-search {
+    top: 12px;
+    left: 22px;
+  }
 }
 
 .hero {
@@ -256,7 +266,7 @@ input {
 @media screen and (width >= 768px) {
   .hero__box {
     text-align: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
     padding-top: auto;
@@ -286,8 +296,8 @@ input {
 .hero__scroll-down {
   background: none;
   border: none;
-  width: 44px;
-  height: 44px;
+  width: 80px;
+  height: 80px;
   margin-top: 64px;
   margin-left: auto;
   display: flex;
@@ -302,9 +312,6 @@ input {
     margin-top: auto;
     margin-left: auto;
     display: flex;
-    position: absolute;
-    top: 580px;
-    left: 800px;
   }
 }
 
@@ -319,6 +326,11 @@ input {
     display: flex;
     position: static;
   }
+}
+
+.buttons {
+  height: 100%;
+  overflow: hidden;
 }
 
 .buttons__btn {
@@ -340,6 +352,16 @@ input {
   justify-content: space-between;
   margin-bottom: 128px;
   display: flex;
+}
+
+@keyframes buttonRotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(60);
+  }
 }
 
 .buttons__item:first-child .buttons__btn {
@@ -447,7 +469,27 @@ input {
   background-color: #0d171d;
   animation-duration: 1.5s;
   display: flex;
-  transform: translate(-65px, -9px);
+  transform: translate(-60px, -9px);
+}
+
+@media screen and (width >= 768px) {
+  .buttons__item:nth-child(10) .buttons__btn {
+    color: #fafafa;
+    background-color: #0d171d;
+    animation-duration: 1.5s;
+    display: flex;
+    transform: translate(350px, -9px);
+  }
+}
+
+@media screen and (width >= 1200px) {
+  .buttons__item:nth-child(10) .buttons__btn {
+    color: #fafafa;
+    background-color: #0d171d;
+    animation-duration: 1.5s;
+    display: flex;
+    transform: translate(-65px, -9px);
+  }
 }
 
 .buttons__item:nth-child(11) .buttons__btn {
@@ -583,14 +625,15 @@ input {
   }
 }
 
-.characters__img {
+.characters__image {
+  flex-shrink: 0;
   width: 315px;
   height: 308px;
   margin-top: 47px;
 }
 
 @media screen and (width >= 768px) {
-  .characters__img {
+  .characters__image {
     width: 704px;
     height: auto;
     margin-top: 72px;
@@ -598,7 +641,7 @@ input {
 }
 
 @media screen and (width >= 1200px) {
-  .characters__img {
+  .characters__image {
     width: 504px;
     height: auto;
     margin-top: 64px;
@@ -607,13 +650,13 @@ input {
 
 .characters__box-flex {
   flex-direction: column;
-  gap: 32px;
   display: flex;
 }
 
 @media screen and (width >= 768px) {
   .characters__box-flex {
     color: #111;
+    gap: 32px;
     max-width: 648px;
     margin-bottom: 16px;
     font-size: 16px;
@@ -851,12 +894,14 @@ input {
 
 .footer__btn-networks {
   gap: 12px;
+  margin-top: 20px;
   display: flex;
 }
 
 @media screen and (width >= 768px) {
   .footer__btn-networks {
     gap: 24px;
+    margin-top: 0;
     display: flex;
   }
 }
@@ -864,6 +909,7 @@ input {
 @media screen and (width >= 1200px) {
   .footer__btn-networks {
     gap: 32px;
+    margin-top: 0;
     display: flex;
   }
 }
@@ -903,11 +949,11 @@ input {
   width: 99px;
   height: 84px;
   position: absolute;
-  top: -24px;
-  left: -30px;
+  top: -8px;
+  left: -50px;
 }
 
-@media screen and (min-wdith: 768px) {
+@media screen and (width >= 768px) {
   .footer__rick-img {
     width: 99px;
     height: 84px;
@@ -917,7 +963,7 @@ input {
   }
 }
 
-@media screen and (min-wdith: 1200px) {
+@media screen and (width >= 1200px) {
   .footer__rick-img {
     width: 99px;
     height: 84px;

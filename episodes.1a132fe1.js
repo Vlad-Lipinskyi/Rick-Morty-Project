@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"9mu7C":[function(require,module,exports,__globalThis) {
+})({"3xQEf":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
+module.bundle.HMR_BUNDLE_ID = "b1369c151a132fe1";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -595,14 +595,12 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"8lqZg":[function(require,module,exports,__globalThis) {
+},{}],"aDYPm":[function(require,module,exports,__globalThis) {
 var _app = require("./js/app");
-var _charactersModal = require("./js/modal/characters-modal");
-var _paginationMarking = require("./js/pagination/pagination-marking");
 var _makeMarkupEpisdoes = require("./js/episodes/make-markup-episdoes");
-var _makeMarkup = require("./js/index/make-markup");
+var _paginationMarking = require("./js/pagination/pagination-marking");
 
-},{"./js/app":"8lRBv","./js/modal/characters-modal":"44xcV","./js/pagination/pagination-marking":"gmpr1","./js/episodes/make-markup-episdoes":"5f92Q","./js/index/make-markup":"erDtj"}],"8lRBv":[function(require,module,exports,__globalThis) {
+},{"./js/app":"8lRBv","./js/episodes/make-markup-episdoes":"5f92Q","./js/pagination/pagination-marking":"gmpr1"}],"8lRBv":[function(require,module,exports,__globalThis) {
 var _charactersApi = require("./api/characters-api");
 var _makeMarkup = require("./index/make-markup");
 var _episodesApi = require("./api/episodes-api");
@@ -616,7 +614,7 @@ console.log(charactersList);
     if (charactersList !== null) charactersList.innerHTML = layout;
 });
 (0, _episodesApi.getEpisodesAPI)().then((data)=>{
-    if (episodesList !== null) episodesList.innerHTML = (0, _makeMarkupEpisdoes.makeMarkUpEpisodes)(data.results);
+    episodesList.innerHTML = (0, _makeMarkupEpisdoes.makeMarkUpEpisodes)(data.results);
 });
 
 },{"./api/characters-api":"jzzDu","./index/make-markup":"erDtj","./episodes/filter-episodes":"eHtYo","./api/episodes-api":"bt97O","./episodes/make-markup-episdoes":"5f92Q"}],"jzzDu":[function(require,module,exports,__globalThis) {
@@ -728,7 +726,7 @@ if (seasonSelect !== null) seasonSelect.addEventListener("change", (e)=>{
 });
 (0, _episodesApiJs.getEpisodesAPI)().then((data)=>{
     allEpisodes = data.results;
-    if (episodesList !== null) episodesList.innerHTML = (0, _makeMarkupEpisdoesJs.makeMarkUpEpisodes)(allEpisodes);
+    episodesList.innerHTML = (0, _makeMarkupEpisdoesJs.makeMarkUpEpisodes)(allEpisodes);
 });
 
 },{"../api/episodes-api.js":"bt97O","./make-markup-episdoes.js":"5f92Q"}],"bt97O":[function(require,module,exports,__globalThis) {
@@ -784,10 +782,10 @@ const makeMarkUpEpisodes = (data)=>data.map((element)=>{
         return makeEpisodes;
     }).join("");
 
-},{"../../img/season-one.jpg":"dJ8Ht","../../img/season-two.jpg":"2ySon","../../img/season-three.jpg":"9Fhxe","../../img/season-four.jpg":"27MMk","../../img/season-five.jpg":"gdocI","../../img/season-six.jpg":"aAs1Y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dJ8Ht":[function(require,module,exports,__globalThis) {
-module.exports = require("f7d6afdc9f33ede4").getBundleURL('bLxZJ') + "season-one.f593fe86.jpg" + "?" + Date.now();
+},{"../../img/season-one.jpg":"hh0gC","../../img/season-two.jpg":"8kh7K","../../img/season-three.jpg":"8LAJ4","../../img/season-four.jpg":"gfPmm","../../img/season-five.jpg":"b24Bv","../../img/season-six.jpg":"Qnvx7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hh0gC":[function(require,module,exports,__globalThis) {
+module.exports = require("333ce15d5956001c").getBundleURL('fdiKb') + "season-one.f593fe86.jpg" + "?" + Date.now();
 
-},{"f7d6afdc9f33ede4":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+},{"333ce15d5956001c":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -822,39 +820,22 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"2ySon":[function(require,module,exports,__globalThis) {
-module.exports = require("8b0f63eabb0231e9").getBundleURL('bLxZJ') + "season-two.a05779ab.jpg" + "?" + Date.now();
+},{}],"8kh7K":[function(require,module,exports,__globalThis) {
+module.exports = require("57ad7d1619ebac65").getBundleURL('fdiKb') + "season-two.a05779ab.jpg" + "?" + Date.now();
 
-},{"8b0f63eabb0231e9":"lgJ39"}],"9Fhxe":[function(require,module,exports,__globalThis) {
-module.exports = require("358d970b078f26b").getBundleURL('bLxZJ') + "season-three.4b83d7ce.jpg" + "?" + Date.now();
+},{"57ad7d1619ebac65":"lgJ39"}],"8LAJ4":[function(require,module,exports,__globalThis) {
+module.exports = require("33576c6657bef488").getBundleURL('fdiKb') + "season-three.4b83d7ce.jpg" + "?" + Date.now();
 
-},{"358d970b078f26b":"lgJ39"}],"27MMk":[function(require,module,exports,__globalThis) {
-module.exports = require("11c755b6b3b39520").getBundleURL('bLxZJ') + "season-four.4d125f4f.jpg" + "?" + Date.now();
+},{"33576c6657bef488":"lgJ39"}],"gfPmm":[function(require,module,exports,__globalThis) {
+module.exports = require("7a82c9a1eb4396f8").getBundleURL('fdiKb') + "season-four.4d125f4f.jpg" + "?" + Date.now();
 
-},{"11c755b6b3b39520":"lgJ39"}],"gdocI":[function(require,module,exports,__globalThis) {
-module.exports = require("e63975d6fa32e12b").getBundleURL('bLxZJ') + "season-five.631c1a05.jpg" + "?" + Date.now();
+},{"7a82c9a1eb4396f8":"lgJ39"}],"b24Bv":[function(require,module,exports,__globalThis) {
+module.exports = require("21b0a06d9b044dd3").getBundleURL('fdiKb') + "season-five.631c1a05.jpg" + "?" + Date.now();
 
-},{"e63975d6fa32e12b":"lgJ39"}],"aAs1Y":[function(require,module,exports,__globalThis) {
-module.exports = require("29da6179edd000a1").getBundleURL('bLxZJ') + "season-six.b1b369a7.jpg" + "?" + Date.now();
+},{"21b0a06d9b044dd3":"lgJ39"}],"Qnvx7":[function(require,module,exports,__globalThis) {
+module.exports = require("ac590c07966078d4").getBundleURL('fdiKb') + "season-six.b1b369a7.jpg" + "?" + Date.now();
 
-},{"29da6179edd000a1":"lgJ39"}],"44xcV":[function(require,module,exports,__globalThis) {
-const characterItems = document.querySelectorAll(".characters__item");
-const modalBackdrop = document.querySelector(".backdrop");
-const closeModalBtn = document.querySelector(".modal__close-btn");
-const listCharacters = document.querySelector(".characters__js-fix");
-console.log(listCharacters);
-listCharacters.addEventListener("click", (e)=>{
-    if (e.target.closest(".characters__item")) {
-        if (modalBackdrop !== null) {
-            modalBackdrop.classList.remove("characters-is-hidden");
-            closeModalBtn.addEventListener("click", (e)=>{
-                modalBackdrop.classList.add("characters-is-hidden");
-            });
-        }
-    }
-});
-
-},{}],"gmpr1":[function(require,module,exports,__globalThis) {
+},{"ac590c07966078d4":"lgJ39"}],"gmpr1":[function(require,module,exports,__globalThis) {
 let perPage = 4;
 let currentIndex = 0;
 const listPagination = document.querySelector(".js-characters");
@@ -873,6 +854,6 @@ function makingPagination() {
     showItems(perPage);
 }
 
-},{}]},["9mu7C","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{}]},["3xQEf","aDYPm"], "aDYPm", "parcelRequire94c2")
 
-//# sourceMappingURL=index.975ef6c8.js.map
+//# sourceMappingURL=episodes.1a132fe1.js.map

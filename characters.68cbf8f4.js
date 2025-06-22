@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"9mu7C":[function(require,module,exports,__globalThis) {
+})({"5JU6f":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
+module.bundle.HMR_BUNDLE_ID = "0e5e21e868cbf8f4";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -595,67 +595,13 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"8lqZg":[function(require,module,exports,__globalThis) {
-var _app = require("./js/app");
-var _charactersModal = require("./js/modal/characters-modal");
-var _paginationMarking = require("./js/pagination/pagination-marking");
-var _makeMarkupEpisdoes = require("./js/episodes/make-markup-episdoes");
+},{}],"blEOQ":[function(require,module,exports,__globalThis) {
 var _makeMarkup = require("./js/index/make-markup");
+var _charactersModal = require("./js/modal/characters-modal");
+var _app = require("./js/app");
+var _paginationMarking = require("./js/pagination/pagination-marking");
 
-},{"./js/app":"8lRBv","./js/modal/characters-modal":"44xcV","./js/pagination/pagination-marking":"gmpr1","./js/episodes/make-markup-episdoes":"5f92Q","./js/index/make-markup":"erDtj"}],"8lRBv":[function(require,module,exports,__globalThis) {
-var _charactersApi = require("./api/characters-api");
-var _makeMarkup = require("./index/make-markup");
-var _episodesApi = require("./api/episodes-api");
-var _makeMarkupEpisdoes = require("./episodes/make-markup-episdoes");
-var _filterEpisodes = require("./episodes/filter-episodes");
-const charactersList = document.querySelector(".characters__js-fix");
-const episodesList = document.querySelector(".episodes__list-js");
-console.log(charactersList);
-(0, _charactersApi.getCharactersAPI)().then((data)=>{
-    const layout = (0, _makeMarkup.makeMarkUp)(data.results);
-    if (charactersList !== null) charactersList.innerHTML = layout;
-});
-(0, _episodesApi.getEpisodesAPI)().then((data)=>{
-    if (episodesList !== null) episodesList.innerHTML = (0, _makeMarkupEpisdoes.makeMarkUpEpisodes)(data.results);
-});
-
-},{"./api/characters-api":"jzzDu","./index/make-markup":"erDtj","./episodes/filter-episodes":"eHtYo","./api/episodes-api":"bt97O","./episodes/make-markup-episdoes":"5f92Q"}],"jzzDu":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getCharactersAPI", ()=>getCharactersAPI);
-const getCharactersAPI = async ()=>await fetch("https://rickandmortyapi.com/api/character").then((respons)=>respons.json());
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"erDtj":[function(require,module,exports,__globalThis) {
+},{"./js/index/make-markup":"erDtj","./js/modal/characters-modal":"44xcV","./js/app":"8lRBv","./js/pagination/pagination-marking":"gmpr1"}],"erDtj":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "makeMarkUp", ()=>makeMarkUp);
@@ -700,6 +646,76 @@ const makeMarkUp = (data)=>{
     return elements;
 };
 
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports,__globalThis) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"44xcV":[function(require,module,exports,__globalThis) {
+const characterItems = document.querySelectorAll(".characters__item");
+const modalBackdrop = document.querySelector(".backdrop");
+const closeModalBtn = document.querySelector(".modal__close-btn");
+const listCharacters = document.querySelector(".characters__js-fix");
+console.log(listCharacters);
+listCharacters.addEventListener("click", (e)=>{
+    if (e.target.closest(".characters__item")) {
+        if (modalBackdrop !== null) {
+            modalBackdrop.classList.remove("characters-is-hidden");
+            closeModalBtn.addEventListener("click", (e)=>{
+                modalBackdrop.classList.add("characters-is-hidden");
+            });
+        }
+    }
+});
+
+},{}],"8lRBv":[function(require,module,exports,__globalThis) {
+var _charactersApi = require("./api/characters-api");
+var _makeMarkup = require("./index/make-markup");
+var _episodesApi = require("./api/episodes-api");
+var _makeMarkupEpisdoes = require("./episodes/make-markup-episdoes");
+var _filterEpisodes = require("./episodes/filter-episodes");
+const charactersList = document.querySelector(".characters__js-fix");
+const episodesList = document.querySelector(".episodes__list-js");
+console.log(charactersList);
+(0, _charactersApi.getCharactersAPI)().then((data)=>{
+    const layout = (0, _makeMarkup.makeMarkUp)(data.results);
+    if (charactersList !== null) charactersList.innerHTML = layout;
+});
+(0, _episodesApi.getEpisodesAPI)().then((data)=>{
+    episodesList.innerHTML = (0, _makeMarkupEpisdoes.makeMarkUpEpisodes)(data.results);
+});
+
+},{"./api/characters-api":"jzzDu","./index/make-markup":"erDtj","./episodes/filter-episodes":"eHtYo","./api/episodes-api":"bt97O","./episodes/make-markup-episdoes":"5f92Q"}],"jzzDu":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getCharactersAPI", ()=>getCharactersAPI);
+const getCharactersAPI = async ()=>await fetch("https://rickandmortyapi.com/api/character").then((respons)=>respons.json());
+
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eHtYo":[function(require,module,exports,__globalThis) {
 var _episodesApiJs = require("../api/episodes-api.js");
 var _makeMarkupEpisdoesJs = require("./make-markup-episdoes.js");
@@ -728,7 +744,7 @@ if (seasonSelect !== null) seasonSelect.addEventListener("change", (e)=>{
 });
 (0, _episodesApiJs.getEpisodesAPI)().then((data)=>{
     allEpisodes = data.results;
-    if (episodesList !== null) episodesList.innerHTML = (0, _makeMarkupEpisdoesJs.makeMarkUpEpisodes)(allEpisodes);
+    episodesList.innerHTML = (0, _makeMarkupEpisdoesJs.makeMarkUpEpisodes)(allEpisodes);
 });
 
 },{"../api/episodes-api.js":"bt97O","./make-markup-episdoes.js":"5f92Q"}],"bt97O":[function(require,module,exports,__globalThis) {
@@ -784,10 +800,10 @@ const makeMarkUpEpisodes = (data)=>data.map((element)=>{
         return makeEpisodes;
     }).join("");
 
-},{"../../img/season-one.jpg":"dJ8Ht","../../img/season-two.jpg":"2ySon","../../img/season-three.jpg":"9Fhxe","../../img/season-four.jpg":"27MMk","../../img/season-five.jpg":"gdocI","../../img/season-six.jpg":"aAs1Y","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dJ8Ht":[function(require,module,exports,__globalThis) {
-module.exports = require("f7d6afdc9f33ede4").getBundleURL('bLxZJ') + "season-one.f593fe86.jpg" + "?" + Date.now();
+},{"../../img/season-one.jpg":"hW7Rq","../../img/season-two.jpg":"jiJdf","../../img/season-three.jpg":"gJBZ0","../../img/season-four.jpg":"9flZg","../../img/season-five.jpg":"iUVan","../../img/season-six.jpg":"cYNP5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hW7Rq":[function(require,module,exports,__globalThis) {
+module.exports = require("d50e613be7b8bbd4").getBundleURL('1etH6') + "season-one.f593fe86.jpg" + "?" + Date.now();
 
-},{"f7d6afdc9f33ede4":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
+},{"d50e613be7b8bbd4":"lgJ39"}],"lgJ39":[function(require,module,exports,__globalThis) {
 "use strict";
 var bundleURL = {};
 function getBundleURLCached(id) {
@@ -822,39 +838,22 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"2ySon":[function(require,module,exports,__globalThis) {
-module.exports = require("8b0f63eabb0231e9").getBundleURL('bLxZJ') + "season-two.a05779ab.jpg" + "?" + Date.now();
+},{}],"jiJdf":[function(require,module,exports,__globalThis) {
+module.exports = require("43c91968ae7e64b8").getBundleURL('1etH6') + "season-two.a05779ab.jpg" + "?" + Date.now();
 
-},{"8b0f63eabb0231e9":"lgJ39"}],"9Fhxe":[function(require,module,exports,__globalThis) {
-module.exports = require("358d970b078f26b").getBundleURL('bLxZJ') + "season-three.4b83d7ce.jpg" + "?" + Date.now();
+},{"43c91968ae7e64b8":"lgJ39"}],"gJBZ0":[function(require,module,exports,__globalThis) {
+module.exports = require("ad2b6d2499dce437").getBundleURL('1etH6') + "season-three.4b83d7ce.jpg" + "?" + Date.now();
 
-},{"358d970b078f26b":"lgJ39"}],"27MMk":[function(require,module,exports,__globalThis) {
-module.exports = require("11c755b6b3b39520").getBundleURL('bLxZJ') + "season-four.4d125f4f.jpg" + "?" + Date.now();
+},{"ad2b6d2499dce437":"lgJ39"}],"9flZg":[function(require,module,exports,__globalThis) {
+module.exports = require("c3f860c19ebc0dca").getBundleURL('1etH6') + "season-four.4d125f4f.jpg" + "?" + Date.now();
 
-},{"11c755b6b3b39520":"lgJ39"}],"gdocI":[function(require,module,exports,__globalThis) {
-module.exports = require("e63975d6fa32e12b").getBundleURL('bLxZJ') + "season-five.631c1a05.jpg" + "?" + Date.now();
+},{"c3f860c19ebc0dca":"lgJ39"}],"iUVan":[function(require,module,exports,__globalThis) {
+module.exports = require("c6494d425ebab2e0").getBundleURL('1etH6') + "season-five.631c1a05.jpg" + "?" + Date.now();
 
-},{"e63975d6fa32e12b":"lgJ39"}],"aAs1Y":[function(require,module,exports,__globalThis) {
-module.exports = require("29da6179edd000a1").getBundleURL('bLxZJ') + "season-six.b1b369a7.jpg" + "?" + Date.now();
+},{"c6494d425ebab2e0":"lgJ39"}],"cYNP5":[function(require,module,exports,__globalThis) {
+module.exports = require("c29a7e9acdbcda72").getBundleURL('1etH6') + "season-six.b1b369a7.jpg" + "?" + Date.now();
 
-},{"29da6179edd000a1":"lgJ39"}],"44xcV":[function(require,module,exports,__globalThis) {
-const characterItems = document.querySelectorAll(".characters__item");
-const modalBackdrop = document.querySelector(".backdrop");
-const closeModalBtn = document.querySelector(".modal__close-btn");
-const listCharacters = document.querySelector(".characters__js-fix");
-console.log(listCharacters);
-listCharacters.addEventListener("click", (e)=>{
-    if (e.target.closest(".characters__item")) {
-        if (modalBackdrop !== null) {
-            modalBackdrop.classList.remove("characters-is-hidden");
-            closeModalBtn.addEventListener("click", (e)=>{
-                modalBackdrop.classList.add("characters-is-hidden");
-            });
-        }
-    }
-});
-
-},{}],"gmpr1":[function(require,module,exports,__globalThis) {
+},{"c29a7e9acdbcda72":"lgJ39"}],"gmpr1":[function(require,module,exports,__globalThis) {
 let perPage = 4;
 let currentIndex = 0;
 const listPagination = document.querySelector(".js-characters");
@@ -873,6 +872,6 @@ function makingPagination() {
     showItems(perPage);
 }
 
-},{}]},["9mu7C","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{}]},["5JU6f","blEOQ"], "blEOQ", "parcelRequire94c2")
 
-//# sourceMappingURL=index.975ef6c8.js.map
+//# sourceMappingURL=characters.68cbf8f4.js.map
